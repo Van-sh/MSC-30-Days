@@ -1,7 +1,7 @@
 import re
 
 def fun(s):
-    return re.fullmatch(r'[a-zA-Z0-9\-_]*@[a-zA-Z0-9]*\.[a-zA-Z]{1,3}', s) is not None
+    return re.fullmatch(r'[a-zA-Z0-9\-_]+@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}', s) is not None
 
 def filter_mail(emails):
     return list(filter(fun, emails))
